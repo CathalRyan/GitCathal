@@ -1,0 +1,79 @@
+﻿<Page
+    x:Class="AppProject.Page1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:AppProject"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="30" FontWeight="Bold">
+        	<Run Text="Abbeyknockmoy"/>
+        	<Run Text=" "/>
+        	<LineBreak/>
+        	<Run/>
+        </TextBlock>
+        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="30" FontWeight="Bold" Margin="79,47,68,0" Width="213">
+            <Run Text="Hurling Club"/>
+            <Run Text=" "/>
+            <LineBreak/>
+            <Run/>
+        </TextBlock>
+
+
+
+        <Image x:Name="image" HorizontalAlignment="Left" Height="100" Margin="32,107,0,0" VerticalAlignment="Top" Width="100" Source="Images/Abbeyknockmoy.jpg"/>
+        <Image x:Name="image1" HorizontalAlignment="Left" Height="100" Margin="223,107,0,0" VerticalAlignment="Top" Width="100" Source="Images/abbeyJersey.jpg"/>
+
+        <Pivot Title="Information" Margin="0,198,0,58">
+            <PivotItem Header="Club History ">
+                <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="-0.559,-2.783">
+                	<Run Text="It was not until 1953 when Ted Dolly along with some local hurlers founded the club and a proper structure was put in place. A junior team was affiliated in 1954 and in the same year the club won its first title and were crowned North Board Junior champions. In the intervening years the club achieved remarkable success in amassing "/>
+                	<Run Text="many"/>
+                	<Run Text=" titles with senior status attained for the 2nd time in 1985 when they won the Intermediate championship to be followed in 1988 when we won the first county senior title. "/>
+                </TextBlock>
+            </PivotItem>
+            <PivotItem Header="Roll Of Honour ">
+
+                <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="279" Width="316">
+                	<Run Text="1999 Co. Under 16 Champions"/>
+                	<LineBreak/>
+                	<Run Text="2001 Co. Junior B Champions"/>
+                	<LineBreak/>
+                	<Run Text="2011 Co. U16C Champions"/>
+                	<LineBreak/>
+                	<Run Text="2011 Co. Minor B1 Champions"/>
+                	<LineBreak/>
+                	<Run Text="2012 Co. U-13 Champions"/>
+                	<LineBreak/>
+                	<Run Text="2012 Co. U-12 League Champions"/>
+                	<LineBreak/>
+                	<Run Text="2013 Co. Feile Justin Cheevers Cup Champions"/>
+                	<LineBreak/>
+                	<Run Text="2013 Co. U16C Champions"/>
+                	<LineBreak/>
+                	<Run Text="2013 Connacht Tain League Champions"/>
+                	<LineBreak/>
+                	<Run Text="2014 Co. U16B Shield Champions"/>
+                	<LineBreak/>
+                	<Run Text="2014 Connacht Tain League Champions"/>
+                	<LineBreak/>
+                	<Run Text="2015 U-12 Division 2 League Champions"/>
+                	<LineBreak/>
+                	<Run Text="2015 County Intermediate Champions"/>
+                	<LineBreak/>
+                	<Run Text="2015 Connacht Intermediate Champions"/>
+                </TextBlock>
+            </PivotItem>
+        </Pivot>
+
+        <Button x:Name="button" Content="Next Page" HorizontalAlignment="Left" Margin="148,587,0,0" VerticalAlignment="Top" Height="43" Click="button9_Click"/>
+
+
+
+
+
+
+    </Grid>
+</Page>

@@ -1,0 +1,72 @@
+﻿<Page
+    x:Class="AppProject.Page2"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:AppProject"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="30" FontWeight="Bold">
+        	<Run Text="Ardrahan"/>
+        	<Run Text=" "/>
+        	<LineBreak/>
+        	<Run/>
+        </TextBlock>
+        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="30" FontWeight="Bold" Margin="86,47,61,0" Width="213">
+            <Run Text="Hurling Club"/>
+            <Run Text=" "/>
+            <LineBreak/>
+            <Run/>
+        </TextBlock>
+        <Image x:Name="image" HorizontalAlignment="Left" Height="100" Margin="10,105,0,0" VerticalAlignment="Top" Width="100" Source="Images/ardahanChrest.jpg"/>
+        <Image x:Name="image1" HorizontalAlignment="Left" Height="100" Margin="115,105,0,0" VerticalAlignment="Top" Width="235" RenderTransformOrigin="-0.268,-0.045" Source="Images/ardrahanTeam.jpg"/>
+
+
+
+
+
+      
+        <Pivot Title="Information" Margin="0,196,0,-196">
+            <PivotItem Header="Club History ">
+                <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="GAA Ardahan hurling club won its first Galway Senior Hurling Club Championship title in 1894 and since then has won it on 11 occasions, having contested 18 County Finals in its history. It lies second on the role of honour, only to Castlegar who have won 16 titles. The last title was won after a replay in 1978, against rival neighbours Ballindereen." VerticalAlignment="Top" Height="288" Width="316"/>
+            </PivotItem>
+            <PivotItem Header="Roll Of Honour ">
+                <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="282" Width="316">
+                	<Run Text="Connacht Senior Hurling Champions"/>
+                	<LineBreak/>
+                	<Run Text="1974, 1975, 1978"/>
+                	<LineBreak/>
+                	<Run Text="County Senior Hurling Champions"/>
+                	<LineBreak/>
+                	<Run Text="1894, 1895, 1896, 1901,"/>
+                	<LineBreak/>
+                	<Run Text="1902, 1903, 1910, 1949, "/>
+                	<LineBreak/>
+                	<Run Text="1974, 1975, 1978"/>
+                	<LineBreak/>
+                	<Run Text="County Intermediate Champions"/>
+                	<LineBreak/>
+                	<Run Text="1947, 1965"/>
+                	<LineBreak/>
+                	<Run Text="County Junior Hurling Champions"/>
+                	<LineBreak/>
+                	<Run Text="1934, 1979"/>
+                	<LineBreak/>
+                	<Run Text="County Under 21 Hurling Champions"/>
+                	<LineBreak/>
+                	<Run Text="1977, 2001(B)"/>
+                	<LineBreak/>
+                	<Run Text="County Minor Hurling Champions"/>
+                	<LineBreak/>
+                	<Run Text="1975, 1978"/>
+                </TextBlock>
+            </PivotItem>
+        </Pivot>
+        <Button x:Name="button" Content="Next Page" HorizontalAlignment="Left" Margin="133,598,0,0" VerticalAlignment="Top" Click="button10_Click"/>
+
+
+
+    </Grid>
+</Page>

@@ -1,0 +1,76 @@
+﻿<Page
+    x:Class="AppProject.Page3"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:AppProject"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Margin="0,-22,0,22">
+        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="30" FontWeight="Bold" Margin="136,41,135,0">
+        	<Run Text="Beagh"/>
+        	<Run Text=" "/>
+        	<LineBreak/>
+        	<Run/>
+        </TextBlock>
+        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="30" FontWeight="Bold" Margin="93,74,54,0" Width="213">
+            <Run Text="Hurling Club"/>
+            <Run Text=" "/>
+            <LineBreak/>
+            <Run/>
+        </TextBlock>
+        <Image x:Name="image" HorizontalAlignment="Left" Height="100" Margin="55,132,0,0" VerticalAlignment="Top" Width="100" Source="Images/beaghCrest1.jpg"/>
+        <Image x:Name="image1" HorizontalAlignment="Left" Height="100" Margin="206,132,0,0" VerticalAlignment="Top" Width="100" Source="Images/beaghJersey1.jpg"/>
+
+
+        <Pivot Title="Information" Margin="0,223,0,-223">
+            <PivotItem Header="Club History ">
+
+                <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="262" Width="316" SelectionChanged="textBlock1_SelectionChanged">
+                	<Run Text="Beagh GAA is"/>
+                	<Run Text=" "/>
+                	<Run Text="located in south County Galway, . The club is almost exclusively concerned with hurling. The club competes in Galway GAA competitions and fields two teams, Senior and Junior B. In 2008 it amalgamated with neighbouring Kilbacenty at juvenile level forming Michael Cusack's Hurling Club. The 1980s were the most successful years in the clubs history with the club achieving Senior Hurling status in 1980 by winning the County Intermediate title. More recently recognised for winning appeals more so than hurling matches."/>
+                </TextBlock>
+            </PivotItem>
+            <PivotItem Header="Roll Of Honour">
+
+                <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="261" Width="316">
+            		<Run Text="UNDER 14"/>
+            		<Run Text="                   "/>
+            		<Run Text="1938,1987,1990"/>
+            		<LineBreak/>
+            		<Run Text="UNDER 16"/>
+            		<Run Text="                   "/>
+            		<Run Text="1990,1997,2000"/>
+            		<LineBreak/>
+            		<Run Text="MINOR B"/>
+            		<Run Text="                     "/>
+            		<Run Text="1980"/>
+            		<LineBreak/>
+            		<Run Text="UNDER 21 C"/>
+            		<Run Text="                "/>
+            		<Run Text="1998"/>
+            		<LineBreak/>
+            		<Run Text="UNDER 21 B&#x9;"/>
+            		<Run Text="       "/>
+            		<Run Text="1993"/>
+            		<LineBreak/>
+            		<Run Text="JUNIOR B&#x9;"/>
+            		<Run Text="       "/>
+            		<Run Text="1958"/>
+            		<LineBreak/>
+            		<Run Text="JUNIOR A&#x9;"/>
+            		<Run Text="        "/>
+            		<Run Text="1978"/>
+            		<LineBreak/>
+            		<Run Text="INTERMEDIATE             1998,2002"/>
+            		<LineBreak/>
+            		<Run Text=""/>
+                </TextBlock>
+            </PivotItem>
+        </Pivot>
+        <Button x:Name="button" Content="Button" HorizontalAlignment="Left" Margin="137,598,0,0" VerticalAlignment="Top" Click="button8_Click"/>
+
+    </Grid>
+</Page>

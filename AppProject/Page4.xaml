@@ -1,0 +1,49 @@
+﻿<Page
+    x:Class="AppProject.Page4"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:AppProject"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="30" FontWeight="Bold" Margin="104,41,117,0">
+        	<Run Text="Carnmore"/>
+        	<Run Text=" "/>
+        	<LineBreak/>
+        	<Run/>
+        </TextBlock>
+        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="30" FontWeight="Bold" Margin="93,74,54,0" Width="213">
+            <Run Text="Hurling Club"/>
+            <Run Text=" "/>
+            <LineBreak/>
+            <Run/>
+        </TextBlock>
+        <Image x:Name="image" HorizontalAlignment="Left" Height="100" Margin="10,154,0,0" VerticalAlignment="Top" Width="147" RenderTransformOrigin="-0.418,-0.167" Source="Images/carnmoreCrest.jpg"/>
+        <Image x:Name="image1" HorizontalAlignment="Left" Height="78" Margin="181,154,0,0" VerticalAlignment="Top" Width="169" RenderTransformOrigin="0.245,-0.352" Source="Images/carnmoreJersey.jpg"/>
+
+        <Pivot Title="Information" Margin="10,245,-10,-245">
+            <PivotItem Header="Club History">
+                <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="10,0,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="258" Width="285">
+                	<Run Text="Carnmore Hurling Club was not founded until 1944, even though there has been hurling played in the parish since the foundation of the GAA and much earlier. Records show that a team under the parish name of Claregalway played hurling in 1886 and reached their first county final in 1895. However the parish never won a County Senior Hurling Championship although it has taken part almost non-stop in county championships ever since with around equal representation of players from both ends of the parish."/>
+                	<LineBreak/>
+                	<Run/>
+                </TextBlock>
+            </PivotItem>
+            <PivotItem Header="Roll Of Honour">
+                <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="County Intermediate Champions 1988." VerticalAlignment="Top" Height="107" Width="295"/>
+
+
+            </PivotItem>
+        </Pivot>
+        <Button x:Name="button" Content="Back To Main Menu" HorizontalAlignment="Left" Margin="135,601,0,0" VerticalAlignment="Top" Click="button7_Click"/>
+
+
+
+
+
+
+
+    </Grid>
+</Page>
