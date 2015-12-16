@@ -14,12 +14,7 @@
         	<LineBreak/>
         	<Run/>
         </TextBlock>
-        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="30" FontWeight="Bold" Margin="130,47,132,0" Width="98">
-        	<Run Text="Clubs"/>
-        	<Run Text="."/>
-        	<LineBreak/>
-        	<Run/>
-        </TextBlock>
+        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="30" FontWeight="Bold" Margin="130,47,132,0" Width="98" Text="Clubs"/>
 
         <Button x:Name="start" HorizontalAlignment="Center" VerticalAlignment="Center" Content="Start" Margin="44,590,136,10" Height="40" Width="180" Click="button_Click"/>
         <Image x:Name="image" HorizontalAlignment="Left" Height="168" Margin="44,85,0,0" VerticalAlignment="Top" Width="265" RenderTransformOrigin="0.153,-0.143" Source="Images/pic3.jpg"/>
